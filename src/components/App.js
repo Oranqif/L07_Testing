@@ -1,3 +1,5 @@
+// @flow
+
 import React, { Component } from 'react';
 import './App.css';
 import Grid from './listings/Grid';
@@ -7,7 +9,8 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {courses};
-  }
+    // this.state = {course};
+  };
 
   render() {
     return (
@@ -15,7 +18,7 @@ export default class App extends Component {
         <div className="navbar-fixed">
           <nav className="blue lighten-2">
             <div className="nav-wrapper">
-              <a href="/" className="brand-logo center">Courses</a>
+              <a href="/" className="brand-logo center">Courses list</a>
             </div>
           </nav>
         </div>

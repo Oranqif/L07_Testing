@@ -6,6 +6,7 @@ export default class Grid extends Component {
   renderList() {
     return this.props.items.map((item) => (
       <Single key={item.id} item={item}/>
+      // <Single item={item}/>
     ));
   }
 

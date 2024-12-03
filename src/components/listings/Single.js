@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Single = ({item}) => {
+  // const Single = () => {}
   return (
     <li className="col l6 s12">
       <div className="card">
