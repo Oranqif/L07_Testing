@@ -1,7 +1,22 @@
+// @flow
+
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Single = ({item}) => {
+type Item = {
+  item: {
+    id: Number,
+    title: String,
+    category: String,
+    description: String,
+    link: String,
+    release_date: String,
+    views: String,
+    image: String,
+  }
+}
+
+const Single = ({item}: Item) => {
   // const Single = () => {}
   return (
     <li className="col l6 s12">
